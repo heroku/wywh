@@ -1,0 +1,30 @@
+.image-capture {
+  margin: 60px;
+
+  video {
+    background: lighten($purple, 25%) center center no-repeat url(../images/icon-camera-circle.png);
+  }
+}
+
+.photo-frame {
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+  width: auto;
+}
+
+.photo-frame:before,
+.photo-frame:after,
+.photo-frame--photo:before,
+.photo-frame--photo:after {
+    content: ' ';
+    position:absolute;
+    width: 25%;
+    height: 25%;
+    border-color: $purple; /* or whatever colour */
+    border-style: solid; /* or whatever style */
+}
+.photo-frame:before { top:0; left:0; border-width: 1px 0 0 1px }
+.photo-frame:after { top:0; right:0; border-width: 1px 1px 0 0 }
+.photo-frame--photo:before { bottom:0; right:0; border-width: 0 1px 1px 0 }
+.photo-frame--photo:after { bottom:0; left:0; border-width: 0 0 1px 1px }

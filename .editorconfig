@@ -1,0 +1,25 @@
+# editorconfig.org
+# this file helps auto-configure your editor to follow preferred formatting rules
+# if using sublime, use package-control to install 'EditorConfig' and editor settings
+# should change accordingly
+root = true
+
+[*]
+indent_style = spaces
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.js]
+indent_size = 2
+
+[*.json]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.jade]
+trim_trailing_whitespace = false

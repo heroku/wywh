@@ -39,7 +39,7 @@ const CreateSelfie = React.createClass({
 
     return (
       <Row>
-        <Col sm={8} lg={6} lgOffset={1}>
+        <Col sm={8} lg={6} lgOffset={photoBooth.image ? 1 : 3} className='CreateSelfie__picture-column'>
           {!photoBooth.image &&
             <ImageCapture handleImage={photoBoothActions.updatePhoto} />
           }
@@ -55,12 +55,16 @@ const CreateSelfie = React.createClass({
             />
           }
         </Col>
-        <Col sm={4} lg={4}>
-          <FlairPicker onAddOverlay={photoBoothActions.addOverlay} />
-        </Col>
-        <Col xs={12} lg={10} lgOffset={1}>
-          <UploadBar onClick={this.uploadPhoto} />
-        </Col>
+        {photoBooth.image &&
+          <Col sm={4} lg={4}>
+            <FlairPicker onAddOverlay={photoBoothActions.addOverlay} />
+          </Col>
+        }
+        {photoBooth.image &&
+          <Col xs={12} lg={10} lgOffset={1}>
+            <UploadBar onClick={this.uploadPhoto} />
+          </Col>
+        }
       </Row>
     );
   }

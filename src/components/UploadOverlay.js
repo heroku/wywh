@@ -7,16 +7,16 @@ const Overlay = React.createClass({
     const { uploading, uploaded } = this.props;
 
     return (
-      <div className='upload-overlay'>
+      <div className='UploadOverlay'>
         {uploading &&
-          <div className='upload-overlay--uploading-image'>
+          <div className='UploadOverlay__uploading'>
             <img src={uploadingImage} />
             <h2>uploading</h2>
           </div>
         }
 
         {!uploading && uploaded &&
-          <div className='upload-overlay--uploaded-image'>
+          <div className='UploadOverlay__uploaded'>
             <img src={uploadedImage} />
             <h2>uploaded</h2>
           </div>

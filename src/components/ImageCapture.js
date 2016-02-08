@@ -76,7 +76,6 @@ export default React.createClass({
           const context = canvas.getContext('2d');
 
           const { width, height } = constrainDimensions(640, { width: img.width, height: img.height });
-          orientation = 5;
 
           if (5 <= orientation && orientation <= 8) {
             canvas.width = height;

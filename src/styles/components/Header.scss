@@ -55,3 +55,9 @@
 .Header__subheader__conference {
   opacity: 0.8;
 }
+
+.Header__logout {
+  float: right;
+  position: relative;
+  z-index: 999;
+}

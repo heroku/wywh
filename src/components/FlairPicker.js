@@ -1,17 +1,6 @@
 import React from 'react';
 import { basic as BASIC_FLAIR } from '../flair';
 
-// const req = require.context('../images/emoji/');
-// const emoji = require('../lib/emoji-dict.json');
-
-// c
-//
-// let FLAIR = [
-//   'grinning', 'grimacing', 'joy', 'heart_eyes', 'blush', 'wave', 'raised_hands', 'point_up_2', 'eyes', 'kiss', 'crown', 'tophat', 'star', 'sparkles', 'fire', 'heart', 'purple_heart', 'blue_heart', 'speech_balloon', 'thought_balloon'
-// ].map(key => { console.log(key, emoji[key].unicode +'.png'); return key }).map((key) => req(`./${emoji[key].unicode}.png`));
-//
-// FLAIR = FLAIR.concat(BASIC_FLAIR);
-//
 const FLAIR = BASIC_FLAIR.map((f) => f.src);
 
 export default React.createClass({
@@ -38,6 +27,9 @@ export default React.createClass({
             onClick={() => this.props.onAddOverlay({ src, left: 10, top: 10 })}
           />
         ))}
+        <div className='FlairPicker__license'>
+          Emoji provided free by <a href='http://emojione.com'>Emoji One</a>.
+        </div>
       </div>
     );
   }

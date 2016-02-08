@@ -31,7 +31,7 @@ const App = React.createClass({
 
     return (
       <div className='page-wrap'>
-        <Header conferenceName={conference && conference.name}/>
+        <Header conferenceName={conference && conference.name} logoutAction={this.props.meActions.logout} />
         {this.props.children}
         <UploadOverlay uploading={this.props.sync.uploading} />
       </div>

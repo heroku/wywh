@@ -2,7 +2,7 @@ import React from 'react';
 
 export default React.createClass({
   render() {
-    const { conferenceName } = this.props;
+    const { conferenceName, logoutAction } = this.props;
     return (
       <header className='Header'>
         <div className='Header__subheader'>
@@ -14,6 +14,9 @@ export default React.createClass({
               {' / '}{conferenceName}
             </span>
           }
+        </div>
+        <div className='Header__logout'>
+          <button onClick={ this.props.logoutAction } className='btn btn-primary'>Logout</button>
         </div>
       </header>
     );

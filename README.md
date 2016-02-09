@@ -1,7 +1,7 @@
 # #[WYWH](https://wywh.io): Wish You Were Here
 
 
-## Send postcards, made with :heart: (& you), from your favorite conferences.
+## Send postcards, made with :heart: (by you), from your favorite conferences.
 
 :warning:  _May also result in you learning about Heroku, and receiving swag._
 

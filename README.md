@@ -1,25 +1,30 @@
-# Heroku Event Signup
+# #[WYWH](https://wywh.io): Wish You Were Here
 
-## Photomatic Client
 
-React application to take photos from webcam, edit photo and have fun and then share on Heroku or Twitter
+## Send postcards, made with :heart: (by you), from your favorite conferences.
 
-## Development
+:warning:  _May also result in you learning about Heroku, and receiving swag._
 
-1. `npm i`
-1. `npm start`
 
-This will use `webpack-dev-server` to run the client on `http://localhost:3000`
+### Hack
 
-## Heroku Deploy Instruction
+**Fork & clone** `$ git clone https://github.com/heroku/wywh.git`
 
-You must have [Heroku Toolbelt](https://toolbelt.heroku.com/) installed before beginning
+**Install** `$ npm install`
 
-1. `heroku create`
-1. `git push heroku master`
+**Run on [localhost:3000](localhost:3000)** `$ npm start`
 
-Done. ^5
 
-## Licensing
+### Deploy
 
-Emoji provided free by [Emoji One](http://emojione.com)
+:point_up: _Use the [Heroku Toolbelt](https://toolbelt.heroku.com) to manage your apps from the CLI_
+
+**Create an app** `$ heroku create`
+
+**Push** `$ git push heroku master`
+
+
+### Dispatch
+
+Have a time, take a :camera:, add :sparkles: and share. Done. :raised_hand:
+

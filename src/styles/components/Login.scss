@@ -1,17 +1,22 @@
 #Login {
   margin-bottom: 40px;
 
-  .homepage-badges img {
+  .homepage-badges {
+    margin-bottom: 15px;
+
+    img {
     margin: 10px 5px;
+    }
   }
 
   .btn {
-    margin: 30px 0;
+    margin: 30px 0 15px;
   }
 
   .row {
-    margin: 40px 0;
-    border-top: 1px #ccc solid;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 1px #E7E7EC solid;
     font-size: 120%;
   }
 

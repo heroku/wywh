@@ -35,7 +35,7 @@ const Login = React.createClass({
             </Col>
             <Col md={6} xs={12}>
               <a className='no-underline' href='https://wywh.io'><h3>Find Out More</h3></a>
-              <a href='https://wywh.io'>See instructions</a>
+              <a href='https://wywh.io'>See instructions</a> for more information
             </Col>
           </Row>
         </Grid>

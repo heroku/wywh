@@ -1,3 +1,3 @@
 module.exports = {
-  apiUrl: 'https://wywh-api.herokuapp.com'
+  apiUrl: 'https://api.wywh.io'
 };

@@ -28,3 +28,30 @@
     margin-bottom: 0;
   }
 }
+
+.clipboard-mobile {
+  display: none;
+}
+
+.clipboard {
+  margin-top: 7px;
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1024px) {
+
+  .clipboard {
+    display: none;
+  }
+
+  .clipboard-mobile {
+    display: initial;
+  }
+
+  .clipboard-mobile a {
+    margin-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

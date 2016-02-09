@@ -1,3 +1,3 @@
 module.exports = {
-  apiUrl: 'http://localhost:5000'
+  apiUrl: 'https://api.wywh.io'
 };

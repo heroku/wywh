@@ -1,6 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Grid } from 'react-bootstrap';
 
 import * as meActionCreators from '../actions/me';
 import * as conferenceActionCreators from '../actions/conferences';
@@ -32,7 +33,7 @@ const App = React.createClass({
     return (
       <div className='page-wrap'>
         <Header conferenceName={conference && conference.name} logoutAction={this.props.meActions.logout} />
-        {this.props.children}
+        <Grid>{this.props.children}</Grid>
         <UploadOverlay uploading={this.props.sync.uploading} />
       </div>
     );

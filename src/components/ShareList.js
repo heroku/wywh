@@ -14,9 +14,6 @@ export default React.createClass({
         <TwitterShareButton shareUrl={this.props.shareUrl} shareText={this.props.shareText} /><br/>
         <DownloadImageButton href={this.props.imageUrl} /><br/>
         <CopyableLink link={this.props.shareUrl} />
-        <div className='clipboard-mobile'>
-          <a src={this.props.shareUrl} className='btn btn-primary'>Photo Link</a>
-        </div>
         <h4>2. Keep shooting</h4>
         <LinkContainer to={`/conferences/${this.props.conferenceId}/selfie`}>
           <Button bsStyle='primary'>Take another!</Button>
@@ -26,7 +23,7 @@ export default React.createClass({
           <div>
             <h4>3. Deploy!</h4>
             <p>Deploy to heroku to get more flair, and a chance of winning great swag.</p>
-            <Button bsStyle='primary'>Learn how to deploy!</Button>
+            <Button href='https://wywh.io/' bsStyle='primary'>Learn how to deploy!</Button>
           </div>
         }
 

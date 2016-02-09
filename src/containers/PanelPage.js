@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Row, Panel, Col } from 'react-bootstrap';
+import { Row, Panel, Col, Grid } from 'react-bootstrap';
 
 export default React.createClass({
   render() {
     return (
-      <div className='page-wrap panel-page--container'>
+      <Grid className='page-wrap panel-page--container'>
         <Row>
           <Col md={6} mdOffset={3}>
             <Panel header={<h1>{this.props.header}</h1>}>
@@ -13,7 +13,7 @@ export default React.createClass({
             </Panel>
           </Col>
         </Row>
-      </div>
+      </Grid>
     );
   }
 });

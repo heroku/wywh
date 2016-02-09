@@ -2,7 +2,15 @@ import React from 'react';
 
 export default React.createClass({
   render() {
-    const { conferenceName, logoutAction } = this.props;
+    const { conferenceName, logoutAction, hideLogout = false } = this.props;
+    let logoutButton;
+    if (!hideLogout) {
+      logoutButton = (
+        <div className='Header__logout'>
+          <button onClick={logoutAction} className='btn btn-primary'>Logout</button>
+        </div>
+      );
+    }
     return (
       <header className='Header'>
         <div className='Header__subheader'>
@@ -15,9 +23,7 @@ export default React.createClass({
             </span>
           }
         </div>
-        <div className='Header__logout'>
-          <button onClick={ this.props.logoutAction } className='btn btn-primary'>Logout</button>
-        </div>
+        {logoutButton}
       </header>
     );
   }

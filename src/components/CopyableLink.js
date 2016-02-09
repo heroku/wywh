@@ -5,18 +5,23 @@ import Clipboard from 'react-zeroclipboard';
 import { Input, Glyphicon, Button } from 'react-bootstrap';
 
 export default ({ link }) => (
-  <div className='clipboard'>
-    <Input
-      type='text'
-      value={link}
-      readOnly
-      onClick={(e) => e.target.setSelectionRange(0, e.target.value.length)}
-      addonBefore='Photo Link'
-      buttonAfter={
-        <Clipboard text={link} onAfterCopy={() => window.alert('Copied link to clipboard!')}>
-          <Button><Glyphicon glyph='copy' /></Button>
-        </Clipboard>
-      }
-    />
+  <div>
+    <div className='clipboard'>
+      <Input
+        type='text'
+        value={link}
+        readOnly
+        onClick={(e) => e.target.setSelectionRange(0, e.target.value.length)}
+        addonBefore='Photo Link'
+        buttonAfter={
+          <Clipboard text={link} onAfterCopy={() => window.alert('Copied link to clipboard!')}>
+            <Button><Glyphicon glyph='copy' /></Button>
+          </Clipboard>
+        }
+      />
+    </div>
+    <div className='clipboard-mobile'>
+      <a href={link} className='btn btn-primary'>Photo Link</a>
+    </div>
   </div>
 );

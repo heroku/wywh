@@ -14,9 +14,6 @@ export default React.createClass({
         <TwitterShareButton shareUrl={this.props.shareUrl} shareText={this.props.shareText} /><br/>
         <DownloadImageButton href={this.props.imageUrl} /><br/>
         <CopyableLink link={this.props.shareUrl} />
-        <div className='clipboard-mobile'>
-          <a src={this.props.shareUrl} className='btn btn-primary'>Photo Link</a>
-        </div>
         <h4>2. Keep shooting</h4>
         <LinkContainer to={`/conferences/${this.props.conferenceId}/selfie`}>
           <Button bsStyle='primary'>Take another!</Button>

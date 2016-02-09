@@ -16,7 +16,7 @@ export default React.createClass({
           }
         </div>
         <div className='Header__logout'>
-          <button onClick={ this.props.logoutAction } className='btn btn-primary'>Logout</button>
+          <button onClick={logoutAction} className='btn btn-primary'>Logout</button>
         </div>
       </header>
     );

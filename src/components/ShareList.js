@@ -23,7 +23,7 @@ export default React.createClass({
           <div>
             <h4>3. Deploy!</h4>
             <p>Deploy to heroku to get more flair, and a chance of winning great swag.</p>
-            <Button bsStyle='primary'>Learn how to deploy!</Button>
+            <Button href='https://wywh.io/' bsStyle='primary'>Learn how to deploy!</Button>
           </div>
         }
 

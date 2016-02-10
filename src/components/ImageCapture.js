@@ -55,7 +55,7 @@ export default React.createClass({
       canvas.width = video.videoWidth;
       canvas.height = video.videoHeight;
       context.scale(-1, 1);
-      context.drawImage(video, 0, 0, -canvas.width, canvas.height);
+      context.drawImage(video, -1*canvas.width, 0);
 
       this.props.handleImage(canvas.toDataURL('image/png'));
     }

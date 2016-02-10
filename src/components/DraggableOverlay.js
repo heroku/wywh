@@ -10,7 +10,8 @@ export default React.createClass({
       startY: 0,
       x: 0,
       y: 0,
-      isWithinBounds: true
+      isWithinBounds: true,
+      isDragging: false
     };
   },
 
@@ -58,11 +59,15 @@ export default React.createClass({
     return (
       <DraggableCore
         onStart={(e, { position }) => {
+          if (this.state.isDragging) {
+            return;
+          }
           this.setState({
             startX: position.clientX,
             startY: position.clientY,
             x: position.clientX,
-            y: position.clientY
+            y: position.clientY,
+            isDragging: true
           });
         }}
         onDrag={(e, { position }) => {

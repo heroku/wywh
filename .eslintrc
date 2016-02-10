@@ -1,0 +1,10 @@
+{
+  "extends": ["andyet-react"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/display-name": 0
+  },
+  "globals": {
+    "process": false
+  }
+}

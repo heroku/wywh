@@ -1,0 +1,28 @@
+.PhotoFrame, .PhotoFrame__inner {
+  position:relative;
+}
+.PhotoFrame {
+  padding: 20px;
+  margin: 20px;
+}
+
+.PhotoFrame__inner {
+  line-height: 0;
+}
+
+.PhotoFrame:before,
+.PhotoFrame:after,
+.PhotoFrame__inner:before,
+.PhotoFrame__inner:after {
+  content: ' ';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-color: $brand-info;
+  border-style: solid;
+}
+
+.PhotoFrame:before { top:0; left:0;  border-width: 1px 0   0 1px; }
+.PhotoFrame:after  { top:0; right:0; border-width: 1px 1px 0 0; }
+.PhotoFrame__inner:before { bottom: -20px; right: -20px; border-width: 0 1px 1px 0; }
+.PhotoFrame__inner:after  { bottom: -20px; left: -20px;  border-width: 0 0   1px 1px; }

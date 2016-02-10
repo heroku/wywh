@@ -1,0 +1,14 @@
+.UploadBar {
+  padding: 10px;
+  background: #EAE9F1;
+  color: $purple;
+  margin: 40px 20px;
+  font-weight: bold;
+  position:relative;
+}
+
+.UploadBar__instructions {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

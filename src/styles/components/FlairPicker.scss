@@ -1,0 +1,22 @@
+.FlairPicker {
+  border: 1px $gray-light solid;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+
+  h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.FlairPicker__flair {
+  width: 48px;
+  margin: 5px;
+}
+
+.FlairPicker__license {
+  font-size: 12px;
+  margin: 20px auto 0 auto;
+}

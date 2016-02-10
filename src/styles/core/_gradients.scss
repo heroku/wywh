@@ -1,0 +1,8 @@
+//
+// Gradients
+// --------------------------------------------------
+
+.purple-gradient, .gradient-primary {
+    @include background-image(linear-gradient(to bottom, darken(#79589F, 7.5%), #534292));
+    background-color: #534292;
+}

@@ -36,7 +36,7 @@ const ViewPhoto = React.createClass({
             conferenceId={photo.conference_id}
             shareUrl={photo.short_url}
             imageUrl={photo.image_url}
-            shareText='Greetings from #forwardjs - wish you were here!'
+            shareText={photo.tweet_body || 'Greetings from #forwardjs - wish you were here!'}
             isDeployed={photo.referer.match(/herokuapp.com/)}
           />
         </Col>

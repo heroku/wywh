@@ -13,11 +13,8 @@ import Header from '../components/layout/Header';
 
 const App = React.createClass({
   componentWillMount() {
+    this.props.conferenceActions.fetchAll();
     this.props.meActions.fetch();
-
-    if (this.props.params.conferenceId && !this.props.conference) {
-      this.props.conferenceActions.fetchAll();
-    }
   },
 
   render() {
@@ -46,7 +43,7 @@ function mapStateToProps(state, props) {
     auth: state.auth,
     me: state.me,
     sync: state.sync,
-    conference: props.params.conferenceId && state.conferences.records.find((c) => c.id === props.params.conferenceId)
+    conference: state.conferences.records.length > 0 && state.conferences.records[0]
   };
 }
 

@@ -25,7 +25,7 @@ const CreateSelfie = React.createClass({
 
   uploadPhoto() {
     this.props.photoActions
-      .rasterizeAndUpload(this.props.params.conferenceId)
+      .rasterizeAndUpload(this.props.conference.id)
       .then((action) => {
         const photo = action.payload;
         this.context.router.push(
@@ -73,7 +73,7 @@ function mapStateToProps(state, props) {
   return {
     photoBooth: state.photoBooth,
     sync: state.sync,
-    conference: state.conferences.records.find((c) => c.id === props.params.conferenceId)
+    conference: state.conferences.records.length > 0 && state.conferences.records[0]
   };
 }
 

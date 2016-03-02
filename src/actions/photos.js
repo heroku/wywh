@@ -43,7 +43,7 @@ export function rasterizeAndUpload(conferenceId) {
     const { photoBooth, conferences } = getState();
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
-    const conference = conferences.records.find((c) => c.id === conferenceId);
+    const conference = conferences.records[0];
 
     if (!conference) {
       throw new Error(`Unknown conference ${conferenceId}`);

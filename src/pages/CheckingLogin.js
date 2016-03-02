@@ -1,5 +1,4 @@
 import React from 'react';
-import PanelPage from '../containers/PanelPage';
 import Header from '../components/layout/Header';
 
 import { Grid, Row, Col } from 'react-bootstrap';

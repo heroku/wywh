@@ -4,7 +4,6 @@ import { Route, IndexRoute } from 'react-router';
 import App from './containers/App';
 import CreateSelfie from './pages/CreateSelfie';
 import ViewPhoto from './pages/ViewPhoto';
-import GetConference from './pages/GetConference'
 
 export default (
   <Route path='/' component={App}>

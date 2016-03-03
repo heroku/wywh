@@ -18,15 +18,14 @@ const App = React.createClass({
   },
 
   render() {
+    const { conference } = this.props;
     if (this.props.auth.isCheckingAuth) {
       return (<CheckingLogin />);
     }
 
     if (!this.props.auth.isAuthenticated) {
-      return (<Login />);
+      return (<Login campaign_id={conference.campaign_id} />);
     }
-
-    const { conference } = this.props;
 
     return (
       <div className='page-wrap'>

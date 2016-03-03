@@ -56,10 +56,10 @@ export function fetch() {
   };
 }
 
-export function login() {
+export function login(campaignId) {
   return (dispatch) => {
     dispatch(preLogin());
-    window.location = `${Config.apiUrl}/login?redirect=${window.location}`;
+    window.location = `${Config.apiUrl}/login?redirect=${window.location}&c=${campaignId}`;
   };
 }
 

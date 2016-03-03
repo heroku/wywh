@@ -10,7 +10,7 @@ import Header from '../components/layout/Header';
 
 const Login = React.createClass({
   render() {
-    const { campaignId } = this.props;
+    const { campaign_id } = this.props;
     return (
       <div>
         <Header hideLogout />
@@ -27,7 +27,7 @@ const Login = React.createClass({
               <p>{ReactEmoji.emojify('Send postcards, made with :heart: (by you), from your favorite conferences.')}</p>
               <div>
                 <button className='btn btn-primary btn-login login-button' onClick={this.props.meActions.login}>Log in to Heroku</button>
-                <a className='btn btn-primary btn-login signup-button' href={`https://signup.heroku.com?campaign_id=${campaignId}`}>New to Heroku? Sign up</a>
+                <a className='btn btn-primary btn-login signup-button' href={`https://signup.heroku.com?campaign_id=${campaign_id}`}>New to Heroku? Sign up</a>
               </div>
             </Col>
           </Row>

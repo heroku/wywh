@@ -1,0 +1,37 @@
+.ImageCapture__button {
+  background-color: transparent;
+  background-image: url(../images/icon-camera-circle.svg);
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.ImageCapture__button-label {
+    font-size: 0;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+}
+
+.ImageCapture__video {
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+.ImageCapture__error {
+  padding: 20px;
+  background: lighten($purple, 45%);
+
+  &:before {
+    content: "";
+    float: left;
+    padding-bottom: 75%;
+  }
+
+  .ImageCapture__error__file-input {
+    padding: 20px;
+  }
+}

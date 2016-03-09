@@ -1,0 +1,23 @@
+@import './core/index';
+
+@import './components/Header';
+@import './components/Login';
+@import './components/PhotoFrame';
+@import './components/ImageCapture';
+@import './components/UploadBar';
+@import './components/FlairPicker';
+@import './components/ShareList';
+@import './components/UploadOverlay';
+
+html, body {
+  height: 100%;
+}
+
+#root, .page-wrap {
+  height: 100%;
+  min-height: 100%;
+}
+
+a.list-group-item h4.list-group-item-heading {
+  color: purple;
+}

@@ -1,0 +1,35 @@
+//Layout
+$panel-width: 430px;
+$footer-height: 100px;
+$margin: 40px;
+
+//Colors
+
+$gray-darker:             #202025 !default;
+$gray-dark:               #3F3F44 !default;
+$gray:                    #7D7D8E !default;
+$gray-light:              #CBCBD2 !default;
+$gray-lighter:            #E7E7EC !default;
+
+$brand-primary:           #79589F;
+$brand-success:           #74C080;
+$brand-info:              #56CDFC;
+$brand-warning:           #FA9F47;
+$brand-danger:            #D64242;
+
+$color-dropbox:           #007EE5;
+$color-github:            #3F3F44;
+
+$border-color:            $gray-light;
+$purple:                  $brand-primary;
+
+// Fonts
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"),
+       url(../fonts/glyphicons-halflings-regular.woff) format("woff"),
+       url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"),
+       url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+}

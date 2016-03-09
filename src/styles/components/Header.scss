@@ -1,0 +1,63 @@
+.Header {
+  background-color: #3B2F63;
+  background-image: -webkit-radial-gradient(50% top, circle, rgba(84,90,182,0.6) 0%, rgba(84,90,182,0) 75%),
+                    -webkit-radial-gradient(right top, circle, #794aa2 0%, rgba(121,74,162,0) 57%);
+  background-image: radial-gradient(circle at 50% top, rgba(84,90,182,0.6) 0%, rgba(84,90,182,0) 75%),
+                    radial-gradient(circle at right top, #794aa2 0%, rgba(121,74,162,0) 57%);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  color: #c7c0de;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  height: 70px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/header-line-drawing.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+}
+
+.Header__logo {
+  margin: 0;
+  font-size: 1em;
+
+  > a {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    width: 143px;
+    height: 40px;
+    background-image: url(../images/logo.svg);
+    background-size: 143px 40px;
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+.Header__subheader {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.Header__subheader__conference {
+  opacity: 0.8;
+}
+
+.Header__logout {
+  float: right;
+  position: relative;
+  z-index: 999;
+}

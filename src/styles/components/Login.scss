@@ -1,0 +1,39 @@
+#Login {
+  margin-bottom: 40px;
+
+  .homepage-badges {
+    margin-bottom: 15px;
+
+    img {
+    margin: 10px 5px;
+    }
+  }
+
+  .btn {
+    margin: 30px 0 15px;
+  }
+
+  .row {
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 1px #E7E7EC solid;
+    font-size: 120%;
+  }
+
+  .row.banner {
+    border-top: none;
+  }
+
+  img.deploy-image {
+    margin: 20px;
+    float: left;
+  }
+
+  a.no-underline {
+    text-decoration: none;
+  }
+
+  .login-button {
+    margin-right: 10px;
+  }
+}

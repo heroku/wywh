@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const makeWebpackConfig = require('hjs-webpack');
 
 const config = makeWebpackConfig({
@@ -43,13 +44,15 @@ config.module.loaders.push({
   loader: 'file-loader'
 });
 
-config.module.loaders.push({
-  test: /src\/config\.js$/,
-  loader: "envify-loader"
-});
-
 config.sassLoader = {
   includePaths: require('bourbon').includePaths
 };
+
+config.plugins = config.plugins || [];
+config.plugins.push(
+  new webpack.EnvironmentPlugin([
+    'WYWH_API'
+  ])
+);
 
 module.exports = config;

@@ -9,11 +9,8 @@ import ReactEmoji from 'react-emoji';
 import Header from '../components/layout/Header';
 
 const Login = React.createClass({
-  login() {
-    const { campaign_id } = this.props;
-    return this.props.meActions.login(campaign_id);
-  },
   render() {
+    const { campaign_id, meActions } = this.props;
     return (
       <div>
         <Header hideLogout />
@@ -29,7 +26,8 @@ const Login = React.createClass({
               </div>
               <p>{ReactEmoji.emojify('Send postcards, made with :heart: (by you), from your favorite conferences.')}</p>
               <div>
-                <button className='btn btn-primary btn-login login-button' onClick={this.login}>Log in or Signup to Heroku</button>
+                <button className='btn btn-primary btn-login login-button' onClick={meActions.login}>Log in to Heroku</button>
+                <a className='btn btn-primary btn-login login-button' href={`https://signup.heroku.com/wywh?redirect-url=https://api.wywh.io/login&c=${campaign_id}`}>New to Heroku? Sign up</a>
               </div>
             </Col>
           </Row>

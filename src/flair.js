@@ -6,8 +6,9 @@ export const basic = [
   { src: require('./images/flair/flair-wywh.png') },
   { src: require('./images/flair/flair-greetings.png') },
   { src: require('./images/flair/flair-from.png') },
-  { src: require('./images/flair/flair-ember.png') },
-  { src: require('./images/flair/flair-tomster.png') },
+  { src: require('./images/flair/flair-heroku-purple.png') },
+  { src: require('./images/flair/flair-heroku-white.png') },
+  { src: require('./images/flair/flair-dyno.png') },
   { src: require('./images/flair/flair-hello.png') },
 
   { name: 'point_up_2', src: require('./images/emoji/1f446.png') },

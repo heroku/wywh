@@ -17,13 +17,15 @@ const Login = React.createClass({
         <Grid id='Login'>
           <Row className='banner'>
             <Col className='text-center'>
-              <h4><strong>DEMO</strong></h4>
+              {/*<h4><strong>DEMO</strong></h4>*/}
               <h1><strong>#WYWH</strong>: Wish You Were Here</h1>
+              {/*
               <div className='homepage-badges text-center'>
                 <img src={require('../images/icon-bronze.svg')}/>
                 <img src={require('../images/icon-silver.svg')}/>
                 <img src={require('../images/icon-gold.svg')}/>
               </div>
+              */}
               <p>{ReactEmoji.emojify('Send postcards, made with :heart: (by you), from your favorite conferences.')}</p>
               <div>
                 <button className='btn btn-primary btn-login login-button' onClick={meActions.login}>Log in to Heroku</button>
@@ -31,6 +33,7 @@ const Login = React.createClass({
               </div>
             </Col>
           </Row>
+          {/*
           <Row>
             <Col md={6} xs={12}>
               <img src={require('../images/icon-gold.svg')} className='deploy-image' />
@@ -42,6 +45,7 @@ const Login = React.createClass({
               <a href='https://wywh.io'>See instructions</a> for more information
             </Col>
           </Row>
+          */}
         </Grid>
       </div>
     );

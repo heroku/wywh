@@ -20,9 +20,9 @@ const Login = React.createClass({
               <h4><strong>DEMO</strong></h4>
               <h1><strong>#WYWH</strong>: Wish You Were Here</h1>
               <div className='homepage-badges text-center'>
-                <img src={require('../images/icon-bronze.svg')}/>
-                <img src={require('../images/icon-silver.svg')}/>
+                {/*<img src={require('../images/icon-bronze.svg')}/>*/}
                 <img src={require('../images/icon-gold.svg')}/>
+                <img src={require('../images/icon-silver.svg')}/>
               </div>
               <p>{ReactEmoji.emojify('Send postcards, made with :heart: (by you), from your favorite conferences.')}</p>
               <div>

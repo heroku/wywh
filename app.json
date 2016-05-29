@@ -1,0 +1,7 @@
+{
+  "name": "Wish You Were Here",
+  "description": "Take a photo, add flair and share.",
+  "repository": "https://github.com/heroku/wywh",
+  "logo": "https://raw.githubusercontent.com/heroku/wywh/master/src/images/favicon.png",
+  "keywords": ["wywh", "heroku"]
+}

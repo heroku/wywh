@@ -10,6 +10,7 @@ import ImageCapture from '../components/ImageCapture';
 import OverlayEditor from '../components/OverlayEditor';
 import FlairPicker from '../components/FlairPicker';
 import UploadBar from '../components/UploadBar';
+import TakeAnother from '../components/TakeAnother.js';
 
 import { Row, Col } from 'react-bootstrap';
 
@@ -43,6 +44,8 @@ const CreateSelfie = React.createClass({
           {!photoBooth.image &&
             <ImageCapture handleImage={photoBoothActions.updatePhoto} />
           }
+          <h1>Test!</h1>
+          <TakeAnother onClick=function() { } />
           {photoBooth.image &&
             <OverlayEditor
               image={photoBooth.image}

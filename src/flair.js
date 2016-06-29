@@ -8,6 +8,7 @@ export const basic = [
   { src: require('./images/flair/flair-from.png') },
   { src: require('./images/flair/flair-gophercon.png') },
   { src: require('./images/flair/flair-gophercon2.png') },
+  { src: require('./images/flair/flair-gopher.png') },
   { src: require('./images/flair/flair-heroku-purple.png') },
   { src: require('./images/flair/flair-heroku-white.png') },
   { src: require('./images/flair/flair-dyno.png') },

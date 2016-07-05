@@ -7,6 +7,10 @@ import (
 	"path/filepath"
 )
 
+const (
+	defaultPort = "5000" // defaultPort for the application to listen on
+)
+
 func assetDir() (string, error) {
 	d, err := os.Getwd()
 	if err != nil {
@@ -23,7 +27,7 @@ func main() {
 
 	p, e := os.LookupEnv("PORT")
 	if !e {
-		p = "5000" // Default port
+		p = defaultPort
 	}
 
 	http.Handle("/", http.FileServer(http.Dir(a)))

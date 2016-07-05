@@ -21,6 +21,8 @@
 
 **Create an app** `$ heroku create`
 
+**Set the buildpacks: "heroku buildpacks:set heroku/nodejs; heroku buildpacks:add heroku/go"
+
 **Push** `$ git push heroku master`
 
 

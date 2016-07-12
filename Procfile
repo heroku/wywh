@@ -1,1 +1,1 @@
-web: wywh-go
+web: node server.js

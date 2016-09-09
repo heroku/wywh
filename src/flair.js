@@ -9,7 +9,7 @@ export const basic = [
   { src: require('./images/flair/flair-github.png') },
   { src: require('./images/flair/flair-github-universe.png') },
   { src: require('./images/flair/flair-octocat.png') },
-  { src: require('./images/flair/flair-kimono-octocat.png') },
+  //{ src: require('./images/flair/flair-kimono-octocat.png') },
   { src: require('./images/flair/flair-heroku-purple.png') },
   { src: require('./images/flair/flair-heroku-white.png') },
   { src: require('./images/flair/flair-dyno.png') },

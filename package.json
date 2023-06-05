@@ -24,7 +24,7 @@
     "inert": "^3.2.0",
     "json-loader": "^0.5.4",
     "jsonwebtoken": "^5.5.4",
-    "node-sass": "^3.4.2",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^0.8.0",
     "react": "^0.14.3",
     "react-addons-update": "^0.14.6",

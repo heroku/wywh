@@ -39,12 +39,12 @@
     "redux-api-middleware": "^1.0.0-beta3",
     "redux-logger": "^2.4.0",
     "redux-thunk": "^1.0.3",
-    "sass-loader": "^3.1.2",
+    "sass-loader": "^6.0.7",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.4.2",
     "url-loader": "^0.5.7",
     "uuid": "^2.0.1",
-    "webpack": "^1.12.9",
+    "webpack": "^4.0.0",
     "yeticss": "^7.0.5"
   },
   "devDependencies": {
